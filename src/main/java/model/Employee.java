@@ -1,5 +1,7 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 public class Employee {
@@ -7,8 +9,9 @@ public class Employee {
 
     private Integer id;
 
+    @JsonProperty("firsName")
     private String name;
-
+    @JsonProperty("lastName")
     private String secondName;
 
     private String thirdName;
